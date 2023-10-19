@@ -36,7 +36,7 @@ export function allowNewLine(e: KeyboardEvent, stateManager: StateManager) {
     return e.key === 'Enter' && !(e.shiftKey || e.metaKey || e.ctrlKey);
   }
 
-  return e.key === 'Enter' && e.shiftKey;
+  return e.key === 'Enter' && (e.shiftKey || e.metaKey || e.ctrlKey);
 }
 
 export const MarkdownEditor = Preact.forwardRef(function MarkdownEditor(

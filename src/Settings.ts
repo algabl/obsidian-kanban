@@ -36,6 +36,10 @@ import {
   getListOptions,
 } from './settingHelpers';
 import {
+  cleanUpDateSettings,
+  renderDateSettings,
+} from './settings/DateColorSettings';
+import {
   cleanupMetadataSettings,
   renderMetadataSettings,
 } from './settings/MetadataSettings';
@@ -43,10 +47,6 @@ import {
   cleanUpTagSettings,
   renderTagSettings,
 } from './settings/TagColorSettings';
-import {
-  cleanUpDateSettings,
-  renderDateSettings,
-} from './settings/DateColorSettings';
 
 const numberRegEx = /^\d+(?:\.\d+)?$/;
 
